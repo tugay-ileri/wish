@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="120dp"
+        android:layout_marginLeft="120dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="120dp"
+        android:background="@drawable/logo3" />
+
+    <EditText
+        android:id="@+id/mail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="80dp"
+        android:layout_marginTop="10dp"
+        android:textSize="16sp"
+        android:hint="@string/mail"
+        android:textColorHint="@color/text"
+        android:textColor="@color/text"
+        android:drawableLeft="@drawable/ic_action_mail"
+        />
+    <EditText
+        android:id="@+id/ad"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="80dp"
+        android:layout_marginTop="10dp"
+        android:textSize="16sp"
+        android:drawableLeft="@drawable/ic_action_ad"
+        android:hint="@string/ad"
+        android:textColorHint="@color/text"
+        android:textColor="@color/text"
+        />
+
+    <EditText
+        android:id="@+id/soyad"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="80dp"
+        android:layout_marginTop="10dp"
+        android:textSize="16sp"
+        android:hint="@string/soyad"
+        android:textColorHint="@color/text"
+        android:textColor="@color/text"
+        android:drawableLeft="@drawable/ic_action_ad"
+        />
+
+        <RadioGroup
+            android:id="@+id/k_radiogroup"
+            android:layout_width="250dp"
+            android:layout_height="35dp"
+            android:layout_marginLeft="50dp"
+            android:orientation="vertical">
+        <RadioButton
+            android:id="@+id/erkek"
+            android:layout_width="120dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="5dp"
+            android:drawableLeft="@drawable/ic_action_cinsiyet"
+            android:text="ERKEK"
+            android:checked="true"
+            android:textColor="@color/text" />
+        <RadioButton
+            android:id="@+id/kadin"
+            android:layout_marginTop="-30dp"
+            android:layout_width="120dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="130dp"
+            android:layout_gravity=""
+            android:text="KADIN"
+            android:textColor="@color/text"
+            android:drawableLeft="@drawable/ic_action_cinsiyet"/>
+
+
+        </RadioGroup>
+
+
+    <EditText
+        android:id="@+id/sifre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="80dp"
+        android:layout_marginTop="1dp"
+        android:textSize="16sp"
+        android:hint="@string/sifre"
+        android:textColorHint="@color/text"
+        android:textColor="@color/text"
+        android:password="true"
+        android:drawableLeft="@drawable/ic_action_parola"
+        />
+    <androidx.cardview.widget.CardView
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="30dp"
+        app:cardBackgroundColor="@color/button"
+        app:cardCornerRadius="30dp"
+        android:layout_marginRight="80dp"
+        android:layout_marginTop="30dp">
+        <RelativeLayout
+            android:id="@+id/k_kaydol"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:textColor="@color/text"
+                android:textSize="20sp"
+                android:text="@string/kayıt"/>
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="80dp"
+        android:layout_marginRight="80dp"
+        android:layout_marginTop="30dp"
+        android:textSize="16sp"
+        android:textColor="@color/text"
+        android:gravity="center"
+        android:text="@string/g_yada"
+        />
+    <com.huawei.hms.support.hwid.ui.HuaweiIdAuthButton
+        android:id="@+id/k_huawei"
+        android:layout_marginLeft="100dp"
+        android:layout_marginRight="80dp"
+        android:layout_marginTop="40dp"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        app:hwid_button_theme = "hwid_button_theme_full_title"
+        app:hwid_color_policy = "hwid_color_policy_blue"
+        app:hwid_corner_radius = "hwid_corner_radius_large"
+        />
+</LinearLayout>

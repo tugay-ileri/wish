@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">wish</string>
+    <string name="mail">"@mail giriniz"</string>
+    <string name="ad">"adınızı giriniz"</string>
+    <string name="soyad">"soyadınızı giriniz"</string>
+    <string name="cinsiyet">"cinsiyetinizi giriniz"</string>
+    <string name="sifre">"şifrenizi  oluşturun"</string>
+    <string name="g_sifre">"şifrenizi girin"</string>
+    <string name="g_yada">______ yada ______</string>
+    <string name="g_huawei">huawei ile giriş yap</string>
+    <string name="g_hesabımyok">hesabın yok mu?  kaydol</string>
+    <string name="g_kaydol">kaydol</string>
+    <string name="kayıt">kaydol</string>
+    <string name="giris">giriş yap</string>
+    <string name="beni_hatirla">beni hatırla</string>
+    <string name="huawei_kaydol">huawei ile kaydol</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+</resources>
